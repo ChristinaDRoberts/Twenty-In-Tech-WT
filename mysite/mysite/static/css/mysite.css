@@ -27,6 +27,21 @@ img{
   }
 }
 
+.sub_heading{
+  margin-bottom: 4%;
+}
+
+.sub_heading_text{
+  padding-bottom: 3%;
+}
+
+.posts{
+  border: 1px solid lightgray;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
 .main{
     /*background-color: lightgray;*/
 }
