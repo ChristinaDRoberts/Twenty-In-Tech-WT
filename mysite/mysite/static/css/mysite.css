@@ -7,11 +7,19 @@ body{
     display: block;
     width: 50%;
 
+}
 
+.card{
+  display: inline-block;
+  margin: 5%;
+  padding:2%;
 }
-img{
-    display: inline;
+
+.rounded-circle{
+  margin: 2%;
+  border: 1px solid lightslategrey;
 }
+
 
 .TinT{
     text-align: center;
@@ -35,12 +43,6 @@ img{
   padding-bottom: 3%;
 }
 
-.posts{
-  border: 1px solid lightgray;
-  width: 60%;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
 
 .main{
     /*background-color: lightgray;*/
