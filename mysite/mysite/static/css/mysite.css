@@ -21,7 +21,9 @@ body{
 
 .interview-div{
   text-align: left;
-  padding:10%;
+  padding-left:10%;
+  padding-right: 10%;
+  padding-top: 4%;
 }
 
 
@@ -31,6 +33,7 @@ body{
 
 .back-btn{
   margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .read-btn{
@@ -104,6 +107,12 @@ body{
 
 .sub_heading_text{
   padding-bottom: 3%;
+}
+
+@media only screen and (max-width: 900px) {
+  .sub_heading_text {
+    font-size: medium;
+  }
 }
 
 
