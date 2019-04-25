@@ -13,29 +13,20 @@
 
             {% with post=post.specific %}
 
-            <div class="card" style="width: 18rem;">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
+
                 {% with post.main_image as main_image %}
                     {% image main_image fill-286x273 class="card-img-top rounded-circle" %}
                     {% endwith %}
               <div class="card-body">
                 <h5 class="card-title">{{ post.title }}</h5>
                 <p class="card-text">{{ post.intro }}</p>
-                <h2><a href="{% pageurl post %}"  class="btn btn-primary">Read Interview</a></h2>
-
+                <h2><a href="{% pageurl post %}"  class="btn btn-secondary">Read Interview</a></h2>
+              
               </div>
             </div>
             {% endwith %}
-{#            {% with post=post.specific %}#}
-{#                <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>#}
 
-{#                {% with post.main_image as main_image %}#}
-{#                {% if main_image %}{% image main_image fill-130x120 %}{% endif %}#}
-{#            {% endwith %}#}
-
-
-
-{#            <p>{{ post.intro }}</p>#}
-{#            {{ post.body|richtext }}#}
 
     {% endfor %}
 

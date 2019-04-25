@@ -11,8 +11,9 @@ body{
 
 .card{
   display: inline-block;
-  margin: 5%;
+  margin: 3%;
   padding:2%;
+  border: 1px solid white;
 }
 
 .rounded-circle{
