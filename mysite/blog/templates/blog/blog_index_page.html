@@ -21,8 +21,8 @@
               <div class="card-body">
                 <h5 class="card-title">{{ post.title }}</h5>
                 <p class="card-text">{{ post.intro }}</p>
-                <h2><a href="{% pageurl post %}"  class="btn btn-secondary">Read Interview</a></h2>
-              
+                <a href="{% pageurl post %}"  class="btn read-btn"><p class="read">Read Interview</p></a>
+
               </div>
             </div>
             {% endwith %}

@@ -3,17 +3,79 @@ body{
 }
 
 .tags{
+    display: flow-root;
+    width: 100%;
+    margin-top:5%;
+    /*border: 1px solid lightgrey;*/
+}
 
-    display: block;
-    width: 50%;
+.tag-btn{
+  margin: 7px;
+}
+
+.img-div{
+  display: block;
+  margin-left: 45%;
 
 }
+
+.interview-div{
+  text-align: left;
+  padding:10%;
+}
+
+
+.back{
+  color: black;
+}
+
+.back-btn{
+  margin-top: 4%;
+}
+
+.read-btn{
+  position: relative;
+  background-color: lightgray;
+  overflow: hidden;
+
+}
+
+.read{
+  color: black;
+  margin: 0 auto;
+}
+
+
+.read-btn::after {
+
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+
+}
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+.read-btn:hover::after, .read-btn:focus::after {
+  animation: sheen 1s forwards;
+}
+
 
 .card{
   display: inline-block;
   margin: 3%;
   padding:2%;
   border: 1px solid white;
+  text-align: center;
 }
 
 .rounded-circle{
