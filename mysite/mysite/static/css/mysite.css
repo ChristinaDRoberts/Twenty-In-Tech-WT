@@ -135,14 +135,17 @@ body{
 *, *:before, *:after{
   box-sizing:border-box;
 }
+
 body{
   font-family: 'Lato', sans-serif;
 }
+
 div.foo{
   width: 90%;
   margin: 0 auto;
   text-align: center;
 }
+
 .letter{
   display: inline-block;
   font-weight: 900;
@@ -155,6 +158,7 @@ div.foo{
   perspective: 400;
   z-index: 1;
 }
+
 .letter:before, .letter:after{
   position:absolute;
   content: attr(data-letter);
@@ -162,9 +166,11 @@ div.foo{
   top:0;
   left:0;
 }
+
 .letter, .letter:before, .letter:after{
   transition: all 0.3s ease-in-out;
 }
+
 .letter:before{
   color: #fff;
   text-shadow:
@@ -176,6 +182,7 @@ div.foo{
     rotateY(-15deg)
     rotateZ(0deg);
 }
+
 .letter:after{
   color: rgba(0,0,0,.11);
   z-index:2;
@@ -186,6 +193,7 @@ div.foo{
     rotateZ(0deg)
     skew(0deg,1deg);
 }
+
 .letter:hover:before{
   color: #fafafa;
   transform:
@@ -193,6 +201,7 @@ div.foo{
     rotateY(-40deg)
     rotateZ(0deg);
 }
+
 .letter:hover:after{
   transform:
     scale(1.08,1)
