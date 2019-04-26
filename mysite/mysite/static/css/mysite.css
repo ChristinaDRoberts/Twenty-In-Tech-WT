@@ -129,7 +129,7 @@ body{
 
 
 
-/*SEE  https://codepen.io/diegopardo/pen/GqEho*/
+/*HEAVILY MODIFIED FROM  https://codepen.io/diegopardo/pen/GqEho*/
 /*Lettering was used from the codepen link above*/
 @import url(https://fonts.googleapis.com/css?family=Lato:900);
 *, *:before, *:after{
@@ -168,7 +168,7 @@ div.foo{
 }
 
 .letter, .letter:before, .letter:after{
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .letter:before{
@@ -195,11 +195,11 @@ div.foo{
 }
 
 .letter:hover:before{
-  color: #fafafa;
-  transform:
-    rotateX(0deg)
-    rotateY(-40deg)
-    rotateZ(0deg);
+  /*color: #fafafa;*/
+  /*transform:*/
+    /*rotateX(0deg)*/
+    /*rotateY(-40deg)*/
+    /*rotateZ(0deg);*/
 }
 
 .letter:hover:after{
@@ -211,4 +211,28 @@ div.foo{
     skew(0deg,22deg);
 }
 
-/*******************/
+
+span {
+
+  display: inline-block;
+  position: relative;
+  padding: 0px 4px;
+  transition: 0.8s;
+  transform: rotateZ(0deg);
+
+}
+
+
+
+span.active {
+  /*transform: rotateZ(360deg) !*skewX(-15deg) translateX(16px)*!;*/
+   color: aquamarine;
+    transform:
+      rotateX(0deg)
+      rotateY(-10deg)
+      rotateZ(0deg);
+
+}
+
+
+
