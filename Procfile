@@ -1,2 +1,2 @@
 
-web: gunicorn templates.wsgi
+web: gunicorn templates.wsgi --log-file -
