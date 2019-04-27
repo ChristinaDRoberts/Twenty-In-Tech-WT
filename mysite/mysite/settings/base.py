@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import dj_database_url
+from django.conf import settings
 # from mysite import mysite as application
 
 # DATABASES['default'] = dj_database_url.config()
@@ -29,9 +30,10 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Application definition
 
 INSTALLED_APPS = [
-    'home',
-    'search',
-    'blog',
+    'mysite.home',
+    'mysite.search',
+    'mysite.blog',
+    'mysite.mysite',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -54,7 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mysite',
+
 
 ]
 
