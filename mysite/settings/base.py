@@ -30,10 +30,10 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Application definition
 
 INSTALLED_APPS = [
-    'home',
-    'search',
-    'blog',
-    'mysite',
+    'mysite.home',
+    'mysite.search',
+    'mysite.blog',
+    
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
