@@ -1,3 +1,7 @@
+
+// modified from https://codepen.io/BraadMartin/pen/btgyh
+
+
 ( function( $ ) {
 
     /**
@@ -135,12 +139,6 @@ $( ".TinT" )
 
     });
 
-// // Click trigger logic
-// $( ".button" ).on( "click", function() {
-//
-//     clicked = true;
-//     turnedOn = true;
-//
-//     startEverything();
-//
-// });
+
+
+

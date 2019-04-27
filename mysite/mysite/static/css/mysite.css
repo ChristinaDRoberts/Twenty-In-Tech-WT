@@ -152,7 +152,7 @@ div.foo{
   font-size: 6em;
   margin: 0.1em;
   position: relative;
-  /*color: #726491;*/
+  color: #2d2d2d;
 
   transform-style: preserve-3d;
   perspective: 400;
@@ -216,7 +216,7 @@ span {
 
   display: inline-block;
   position: relative;
-  padding: 0px 4px;
+  padding: 0px 3px;
   transition: 0.8s;
   transform: rotateZ(0deg);
 
@@ -229,10 +229,10 @@ span.active {
    color: aquamarine;
     transform:
       rotateX(0deg)
-      rotateY(-10deg)
+      rotateY(-30deg)
       rotateZ(0deg);
 
 }
 
-
+/*   */
 
