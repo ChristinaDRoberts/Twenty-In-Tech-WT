@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'mysite.home',
     'mysite.search',
     'mysite.blog',
-    'mysite.urls',
+    # 'mysite.urls',
 
 
     'wagtail.contrib.forms',
